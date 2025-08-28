@@ -31,6 +31,12 @@
         "projectId": "a934b49e-f097-4cd5-b125-8d910aa728f9"
       }
     },
-    "owner": "shaffij"
+    "owner": "shaffij",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/a934b49e-f097-4cd5-b125-8d910aa728f9"
+    }
   }
 }
