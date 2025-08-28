@@ -1,4 +1,4 @@
-# Metal Prices RN (Expo + React Navigation)
+# Metal Prices RN
 
 A React Native (Expo) app that displays **live-looking** precious metal prices (Gold, Silver, Platinum, Palladium).
 Each tile loads independently with its own loader and error state. Tapping a tile opens a details screen
