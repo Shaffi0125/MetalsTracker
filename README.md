@@ -70,3 +70,32 @@ If your real API returns a different shape, adapt the mapping in `fetchMetalSnap
 - "24K price" is represented by the `karat24Price` field in the mock.
 - Time/date display uses your device locale via `Intl`/`date-fns`.
 - To add more metals, update `METALS` in `HomeScreen.js` and implement server-side support.
+
+
+## Bullet points on approach and challenges/unresolved notes
+
+---
+
+###### **\* Approach:-**
+
+
+
+* Started by creating a **React Native** project with **Expo** for easy cross-platform development.
+  Set up **React Navigation** to switch between Home and Details screens.
+* Built a **reusable MetalTile component** to display each metal's snapshot with independent loading/error states.
+* Used a **mock API**(mockApi,js) for development to simulate live data fetching.
+* **Structured the project** into api/, components/, screens/, and utils/ folders for maintainability.
+  Implemented **auto-refresh** every few seconds to mimic real-time price updates.
+  Added a **utility function**(format.js) for consistent currency formatting.
+
+
+
+**Challenges/Unresolved notes:-**
+
+---
+
+* Currently using a mock API, needs integration with a real API (eg - goldapi.io).
+* Limited styling, UI could be enhanced with charts and filters or alerts.
+* Error handling can be enhanced for poor/no network connection.
+* Deployment tested only on Expo Go, production builds not yet validated.
+
