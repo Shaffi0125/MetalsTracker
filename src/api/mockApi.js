@@ -56,7 +56,8 @@ export async function fetchMetalSnapshot(metal) {
     lastUpdated: now.toISOString(),
     date: now.toISOString(),
     change,
-    changePercent
+    changePercent,
+    price: current
   };
 }
 
